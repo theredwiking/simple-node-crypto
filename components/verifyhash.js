@@ -9,7 +9,7 @@ const verifyHash = (password, salt, hashed) => {
     if (match) {
         return 'success';
     } else {
-        return 'fuck';
+        return 'failed';
     }
 };
 
