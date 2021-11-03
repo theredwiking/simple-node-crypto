@@ -3,5 +3,6 @@ module.exports = {
     Hash: require('./components/hash'),
     verifyHash: require('./components/verifyhash'),
     Encrypt: require('./components/encrypt'),
-    Decrypt: require('./components/decrypt')
+    Decrypt: require('./components/decrypt'),
+    keyGen: require('./components/keygen'),
 };
