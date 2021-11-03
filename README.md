@@ -38,3 +38,27 @@ success
 or
 failed
 ```
+
+### How to generate keys
+```js
+const {keyGen} = require('simple-node-crypto');
+
+keyGen();
+```
+This will make a public.pem and private.pem in the root of your project
+
+### How to encrypt and decrypt data
+```js
+const {Encrypt, Decrypt} = require('simple-node-crypto');
+
+let data = 'This is a test';
+
+let encrypt = Encrypt('./public.pem', data);
+
+console.log(encrypt.toString('hex'));
+
+let decrypt = Decrypt('./private.pem', encrypt);
+
+console.log(decrypt.toString());
+```
+This is all you need to encrypt and decrypt data
