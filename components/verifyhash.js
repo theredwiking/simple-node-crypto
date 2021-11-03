@@ -6,11 +6,7 @@ const verifyHash = (password, salt, hashed) => {
     const keyBuffer = Buffer.from(hashed, 'hex');
     const match = timingSafeEqual(hashedBuffer, keyBuffer);
 
-    if (match) {
-        return 'success';
-    } else {
-        return 'failed';
-    }
+    return match ? true : false;
 };
 
 module.exports = verifyHash;

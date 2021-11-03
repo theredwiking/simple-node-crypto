@@ -34,9 +34,9 @@ console.log(verifyHash('password123', hash.salt, hash.hash));
 ```
 It will return either
 ```js
-success
+true
 or
-failed
+false
 ```
 
 ### How to generate keys
