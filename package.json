@@ -1,0 +1,24 @@
+{
+  "name": "simple-node-crypto",
+  "version": "0.0.1",
+  "description": "A simple crypto module made using node built in crypto package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theredwiking/simple-node-crypto.git"
+  },
+  "keywords": [
+    "crypto",
+    "bcrypt",
+    "encryption"
+  ],
+  "author": "theredwiking",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theredwiking/simple-node-crypto/issues"
+  },
+  "homepage": "https://github.com/theredwiking/simple-node-crypto#readme"
+}
