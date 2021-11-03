@@ -1,12 +1,9 @@
 const { scryptSync, timingSafeEqual } = require('crypto');
 
-const verifyHash = (hashs, name, password) => {
-    const hashed = hashs.find(v => v.name === name);
-
-    const [salt, key] = hashed.password.split(':');
+const verifyHash = (password, salt, hashed) => {
     const hashedBuffer = scryptSync(password, salt, 64);
 
-    const keyBuffer = Buffer.from(key, 'hex');
+    const keyBuffer = Buffer.from(hashed, 'hex');
     const match = timingSafeEqual(hashedBuffer, keyBuffer);
 
     if (match) {
