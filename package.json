@@ -1,10 +1,10 @@
 {
   "name": "simple-node-crypto",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple crypto module made using node built in crypto package",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/theredwiking/simple-node-crypto/issues"
   },
-  "homepage": "https://github.com/theredwiking/simple-node-crypto#readme"
+  "homepage": "https://github.com/theredwiking/simple-node-crypto#readme",
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  }
 }
